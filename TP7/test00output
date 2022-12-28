@@ -1,0 +1,78 @@
+$ help
+cat <name>
+cd [<foldername>]
+cp <src> <dst>
+ed <filename>
+ls [<name>]
+mkdir <foldername>
+mv <src> <dst>
+rm <name>
+quit
+$ ls    
+. (dossier)
+$ ls .
+. (dossier)
+$ ls ..
+N'existe pas: ..
+$ cat
+Pas un bon nombre de paramètres.
+$ cat . 
+. (dossier)
+$ cat ..
+N'existe pas: ..
+$ cd ..
+N'existe pas: ..
+$ cd
+$ ls
+. (dossier)
+$ ls foo
+N'existe pas: foo
+$ cat foo
+N'existe pas: foo
+$ rm foo
+N'existe pas: foo
+$ rm ..
+N'existe pas: ..
+$ rm .
+Impossible de supprimer .
+$ mv foo bar
+N'existe pas: foo
+$ mv .. .
+N'existe pas: ..
+$ mv . ..
+N'existe pas: ..
+$ mkdir .
+Existe déjà: .
+$ mkdir ..
+N'existe pas: ..
+$ ed ..
+N'existe pas: ..
+$ mkdir test
+$ ls
+. (dossier)
+test (dossier)
+$ ls test
+. (dossier)
+.. (dossier)
+$ ed test/a
+Entrez le texte du fichier (terminez par une ligne contenant seulement un point)
+Bonjour !
+.
+$ mv test test2
+$ ls
+. (dossier)
+test2 (dossier)
+$ ls test2
+. (dossier)
+.. (dossier)
+a (texte)
+$ cd test2
+$ cat a
+Bonjour !
+$ rm ..
+Impossible de supprimer ..
+$ mkdir ..
+Existe déjà: ..
+$ mv .. inception
+Pas possible de déplacer un dossier dans lui-même.
+$ 

@@ -1,0 +1,35 @@
+help
+ls    
+ls .
+ls ..
+cat
+cat . 
+cat ..
+cd ..
+cd
+ls
+ls foo
+cat foo
+rm foo
+rm ..
+rm .
+mv foo bar
+mv .. .
+mv . ..
+mkdir .
+mkdir ..
+ed ..
+mkdir test
+ls
+ls test
+ed test/a
+Bonjour !
+.
+mv test test2
+ls
+ls test2
+cd test2
+cat a
+rm ..
+mkdir ..
+mv .. inception

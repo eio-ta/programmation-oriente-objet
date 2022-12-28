@@ -1,0 +1,61 @@
+$ mkdir test
+$ ls
+. (dossier)
+test (dossier)
+$ cd test
+$ ls
+. (dossier)
+.. (dossier)
+$ mkdir foo
+$ ls
+. (dossier)
+.. (dossier)
+foo (dossier)
+$ ed a
+Entrez le texte du fichier (terminez par une ligne contenant seulement un point)
+Bonsoir !
+.
+$ ls
+. (dossier)
+.. (dossier)
+foo (dossier)
+a (texte)
+$ cd foo
+$ cp ../a b
+$ ls
+. (dossier)
+.. (dossier)
+b (texte)
+$ cat b
+Bonsoir !
+$ cd /
+$ ls
+. (dossier)
+test (dossier)
+$ cp test test2
+$ ls test2
+. (dossier)
+.. (dossier)
+foo (dossier)
+a (texte)
+$ cd test2
+$ ls
+. (dossier)
+.. (dossier)
+foo (dossier)
+a (texte)
+$ cat a
+Bonsoir !
+$ cat foo/b
+Bonsoir !
+$ ed foo/b
+Entrez le texte du fichier (terminez par une ligne contenant seulement un point)
+Bonjoir !
+.
+$ cat a
+Bonsoir !
+$ cat foo/b
+Bonjoir !
+$ cp .. inception
+Pas possible de déplacer un dossier dans lui-même.
+$ 

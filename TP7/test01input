@@ -1,0 +1,28 @@
+mkdir test
+ls
+cd test
+ls
+mkdir foo
+ls
+ed a
+Bonsoir !
+.
+ls
+cd foo
+cp ../a b
+ls
+cat b
+cd /
+ls
+cp test test2
+ls test2
+cd test2
+ls
+cat a
+cat foo/b
+ed foo/b
+Bonjoir !
+.
+cat a
+cat foo/b
+cp .. inception
